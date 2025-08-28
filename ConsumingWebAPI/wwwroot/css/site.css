@@ -1,0 +1,110 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 2rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"] {
+    padding: 0.4rem;
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    pointer-events: none;
+}
+
+.topbar {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.topbar-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.topbar-home {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.topbar-home:hover {
+    background-color: #e6e6e6;
+}
+
+

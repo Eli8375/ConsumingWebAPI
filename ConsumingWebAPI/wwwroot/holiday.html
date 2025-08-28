@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Public Holidays Finder</title>
+    <link rel="stylesheet" href="css/site.css">
+    <script src="js/site.js"></script>
+</head>
+<body>
+    <nav class="topbar">
+        <div class="topbar-container">
+            <span class="topbar-title">Public Holidays Finder with AJAX</span>
+            <a href="holiday.html" class="topbar-home">Home</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="mb-4 text-center">Public Holidays Finder with AJAX</h2>
+
+        <form class="row g-3 justify-content-center mb-4" onsubmit="fetchHolidays(); return false;">
+            <div class="col-auto">
+                <label for="countryCode" class="form-label">Country Code</label>
+                <input type="text" class="form-control" id="countryCode">
+            </div>
+            <div class="col-auto">
+                <label for="year" class="form-label">Year</label>
+                <input type="text" class="form-control" id="year">
+            </div>
+            <div class="col-auto align-self-end">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+
+        <div id="result"></div>
+    </div>
+</body>
+</html>
